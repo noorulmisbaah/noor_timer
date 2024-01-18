@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Poppins;
+    src: url('fonts/Poppins-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('fonts/Poppins-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('fonts/Nunito-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('fonts/Nunito-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Segoe UI Semilight';
+    src: url('fonts/Segoe UI Semilight.ttf');
+}
+
+@font-face {
+    font-family: 'Gruppo';
+    src: url('fonts/Gruppo-Regular.ttf');
+}
+
+@font-face {
+    font-family: Muli;
+    src: url('fonts/Muli-Regular.ttf');
+}

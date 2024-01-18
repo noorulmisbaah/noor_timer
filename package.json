@@ -1,0 +1,22 @@
+{
+  "name": "Noor Timer",
+  "version": "1.0.0",
+  "description": "A timer application",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "node index"
+  },
+  "author": "Noorul Misbah",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mailer": "^0.6.7",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^4.7.0",
+    "nodemon": "^3.0.1",
+    "styliner": "^1.1.0"
+  }
+}

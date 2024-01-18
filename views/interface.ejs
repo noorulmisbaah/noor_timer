@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Noor Timer</title>
+        
+        <!--CSS files-->
+        <link rel="stylesheet" href="css/font-families.css">
+        <link rel="stylesheet" href="notification-box/notification_styles.css">
+        <link rel="stylesheet" href="css/interface.css">
+        <link rel="stylesheet" href="css/menu.css">
+        
+        <!--Site icon-->
+        <link rel="icon" href="imgs/timer.png">
+        
+        <!--JavaScript files-->
+        <script defer src="js/libs/react.js"></script>
+        <script defer src="js/libs/react-dom.js"></script>
+        <script defer src="js/libs/babel-standalone.js"></script>
+        <script defer src="js/functions.js"></script>
+        <script defer src="notification-box/notification_funcs.js"></script>
+        <script defer src="js/UI.js"></script>
+        <script defer src="js/Root.js" type="text/babel"></script>
+    </head>
+    <body>
+        <noscript>
+            Looks like JavaScript is not enabled in your browser.
+        </noscript>
+        <p data hidden><%= timers %></p>
+        <header>
+            <img src="imgs/logo.png" class="logo" draggable="false" alt="Logo">
+            <div style="display: flex;">
+                <p class="username"><%= username %></p>
+                <img src="imgs/menu.png" class="menu-icon" draggable="false" alt="Menu">
+            </div>
+        </header>
+        <div class="menu">
+            <p class="heading">Menu</p>
+            <img src="imgs/close.png" class="menu-x" alt="Close" draggable="false">
+            <div class="menu-content">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="imgs/about.png" class="menu-item-icon" alt="About" draggable="false">
+                        <p class="menu-item-title">About</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="imgs/new.png" class="menu-item-icon" alt="Updates" draggable="false">
+                        <p class="menu-item-title">What's New</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="imgs/contact.png" class="menu-item-icon" alt="Contact" draggable="false">
+                        <p class="menu-item-title">Contact Us</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="imgs/comments.png" class="menu-item-icon" alt="Comments" draggable="false">
+                        <p class="menu-item-title">Comments</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="imgs/manage-account.png" class="menu-item-icon" alt="Manage Account" draggable="false">
+                        <p class="menu-item-title">My Account</p>
+                    </div>
+                </div>
+                <div class="items-details">
+                    <img src="imgs/back.png" alt="Back" draggable="false" class="back-button">
+                    <div class="details">
+                        <p class="sub-heading">About</p>
+                        <div class="details-content">
+                            <div class="app-details">
+                                <p>&copy; 2024 Noorul Misbah. All rights reserved.</p>
+                                <p>Application name: Noor Timer</p>
+                                <p>Version: 1.0.0</p>
+                                <p>Author: Aminu Adamu Aminu</p>
+                            </div>
+                            <p>
+                                Thank you for creating an account with Noor Timer. We hope you'll enjoy using the application. It has a simple user interface,
+                                a customized menu and customized notification boxes. The application is designed to help you keep track of how long it takes you to finish tasks.
+                                
+                            </p>
+                            <p>
+                                You can create as many tasks as you want. For example, you can create timer that keeps track of your baking; another one keeps track of your cooking and so on.
+                            </p>
+                            <p>
+                                Each task will have a title and a description, which will help you remember the task you're counting on. 
+                                If you wish, you can modify the information of any task, i.e., you can rename the task title and the task description. You can pause any timer and 
+                                then continue the timer whenever you wish.
+                            </p>
+                            <p>
+                                Furthermore, you can remove the tasks that you no longer need.
+                            </p>
+                            <p class="app-details-title">Application Requirements</p>
+                            <p>
+                                Noor Timer requires a stable internet connection. Changes won't be made on the server without an internet connection. Furthermore, JavaScript must be enabled in your browser. Though the application is designed to be 
+                                responsive, it renders best on PCs. It works well on most modern browsers. Unfortunately, Noor Timer won't work well on Internet Explorer.
+                            </p>
+                            <p class="app-details-title">How to Use</p>
+                            <p>
+                                You must have created an account before you have access to this page. That's the first step in using the Noor Timer. Click the plus button to add 
+                                a new timer. A form will appear with two text fields, one for the timer title and the other for the timer description. Both fields are required. 
+                                You won't be able to add a timer with a title that already exists. Click 'Add' from the form after providing the title and the description. To cancel, click 'Cancel'.
+                            </p>
+                            <p>
+                                By default, the time on a new timer is 00:00:00. To start the timer, click the 'Start' button at the bottom of the timer. Once the timer starts, the 'Start' button
+                                changes to 'Stop' and the time begins updating. You can click the 'Stop' button if you wish to stop the timer.
+                            </p>
+                            <p>
+                                Above the Start/Stop button are 'Edit' and 'Bin' icons. The 'Edit' icon is used to edit the timer information while the 'Bin' icon is used to remove the timer. A
+                                running timer cannot be removed or edited. If you wish to remove or edit a timer, it must be stopped first.
+                            </p>
+                            <p class="app-details-title">Limitations</p>
+                            <p>Noor Timer is simple to use but the current version has some limitations. Below are some of them.</p>
+                            <ol style="margin: 1rem 1.5rem;">
+                                <li>
+                                    It is recommended to run the application in a single tab rather than multiple tabs or browers at the same time.
+                                </li>
+                                <li>
+                                    The progress of the timers are not saved automatically if you close the tab or the browser. Therefore, you should stop any running timer before
+                                    closing the interface or refreshing the page.
+                                </li>
+                                <li>
+                                    The current version of Noor Timer does not allow having mutiple timers with the same title.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <p class="sub-heading">What's New</p>
+                        <p class="details-content">
+                            No updates are available.
+                        </p>
+                    </div>
+                    <div class="details">
+                        <p class="sub-heading">Contact Us</p>
+                        <p class="details-content">
+                            If you have any suggesion or complaint, please contact us via noorulmisbaah.noor@gmail.com or aminunawwarah@gmail.com.
+                        </p>
+                    </div>
+                    <div class="details">
+                        <p class="sub-heading">Comments</p>
+                        <div class="details-content">
+                            <% if (JSON.parse(comments).length < 1) { %>
+                                <p style="font-family: 'Segoe UI Semilight'; font-size: 1.5rem; color: #FFBB00; margin: 1rem 0;">
+                                    There are no comments to show. Why not make your own comment now?</p>
+                            <% } else {
+                                JSON.parse(comments).reverse().map(comment => { %>
+                                    <div class="comment">
+                                        <p>Posted on: <span class="post-date"><%= comment.date %></span></p>
+                                        <p>By: <span class="post-author"><%= comment.author %></span></p>
+                                        <p class="post-content"><%= comment.comment %></p>
+                                    </div>
+                               <% }) %>
+                                    <p style="font-family: 'Segoe UI Semilight'; font-size: 1.5rem; color: #FFBB00; margin: 1rem 0;">Why not make your own comment now?</p>
+                               <% } %>
+                               <button class="make-post-button">Make a Comment</button>
+                                <div class="comment-area">
+                                    <textarea id="post-text-area" spellcheck="true" placeholder="Add your comment..."></textarea>
+                                    <button class="submit-post-button">Send</button>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <p class="sub-heading">Manage My Account</p>
+                        <div class="details-content">
+                            <div>
+                                <p class="sub-title">Basic Information</p>
+                                <p style="text-transform: capitalize;">Username: <span username><%= username %></span></p>
+                                <p>Email: <span usermail><%= usermail %></span></p>
+                                <p>Signed up on: <%= date %></p>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <p class="sub-title">Update Information</p>
+                                <form action="/" method="GET">
+                                    <label for="username">Update username</label>
+                                    <input id="username" type="text">
+                                    <label for="email">Update email</label>
+                                    <input id="email" type="email">
+                                    <label>Update password</label>
+                                    <input id="current-password" type="password" placeholder="Enter the old password...">
+                                    <input id="new-password" type="password" placeholder="Enter the new password...">
+                                    <button type="submit" hidden></button>
+                                </form>
+                                <div>
+                                    <button class="update-account-button">Update Information</button>
+                                    <button type="submit" class="delete-account-button">Delete Account</button>
+                                    <form method="GET" action="/">
+                                        <button delete-account-button type="submit" hidden></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            
+        </div>
+    </body>
+</html>

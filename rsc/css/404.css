@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    background: #C0C0C0;
+}
+
+.error-text {
+    font-size: 3rem;
+    font-family: 'Segoe UI Semilight';
+    text-align: center;
+    color: #666666;
+}
+
+@media screen and (max-width: 600px) {
+    .error-text {
+        font-size: 2rem;
+    }
+}

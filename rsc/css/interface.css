@@ -1,0 +1,226 @@
+/**
+ * Copyright Noorul Misbah 2024-present. All rights reserved.
+ */
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+body {
+    font-family: 'Segoe UI Semilight';
+}
+
+button {
+    padding: 0.2rem 0.4rem;
+    background: #FFFFFF;
+    font-family: Poppins;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s linear all;
+}
+
+input {
+    margin-bottom: 1rem;
+    border: 1px solid #505050;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    outline: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #F0F0F0;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+    color: #FFBB00;
+}
+
+.username {
+    font-size: 1.3rem;
+    color: #FFBB00;
+    display: inline;
+    text-transform: capitalize;
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 7rem;
+    height: 2.5rem;
+}
+
+.content {
+    height: 80vh;
+    margin: 1rem 0;
+    display: flex;
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #303030;
+}
+
+.timers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid #464646;
+    border-radius: 10px;
+    background: #D0D0D0;
+    box-shadow: 0 0 10px 3px #808080;
+    width: 15rem;
+    margin-bottom: 1rem;
+    animation: appear 0.5s linear;
+}
+
+.timer-title {
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.timer-description {
+    font-family: Gruppo;
+    font-size: 1.2rem;
+    color: #686868;
+}
+
+.timer-time-string {
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.7rem 0;
+}
+
+.timer-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FF9900;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 15rem;
+    margin: 1rem 0;
+    animation: appear 0.5s linear;
+}
+
+.timer-state {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    outline: none;
+}
+
+
+.icon {
+    margin-bottom: 1rem;
+}
+
+.icon {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.start {
+    color: #008000;
+    border-top: 1px solid #008000
+}
+
+.start:hover {
+    background: #008000;
+    color: #FFFFFF;
+}
+
+.stop {
+    color: #FF9900;
+    border-top: 1px solid #FF9900;
+}
+
+.stop:hover {
+    background: #FF9900;
+    color: #FFFFFF;
+}
+
+.status-text {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #FF0099;
+}
+
+.add-timer {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #288600;
+    border-radius: 5px;
+    animation: appear 0.5s linear;
+    margin-bottom: 1rem;
+}
+
+.add-timer:hover {
+    background: #288600;
+    border-color: #003355;
+    color: #FFFFFF;
+}
+
+.form-submit-button {
+    border: 1px solid #0000CC;
+    color: #0000CC;
+    width: 6rem;
+}
+
+.form-submit-button:hover {
+    background: #0000CC;
+    color: #FFFFFF;
+}
+
+.form-cancel-button {
+    border: 1px solid #CC0000;
+    color: #CC0000;
+    width: 6rem;
+}
+
+.form-cancel-button:hover {
+    background: #CC0000;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        width: 5rem;
+        height: 2rem;
+    }
+
+    .username {
+        font-size: 1.2rem;
+    }
+}

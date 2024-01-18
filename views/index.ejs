@@ -1,0 +1,89 @@
+<!--Copyright Noorul Misbah 2024-present. All rights reserved.-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Noor Timer</title>
+        
+        <!--CSS files-->
+        <link rel="stylesheet" href="css/font-families.css">
+        <link rel="stylesheet" href="notification-box/notification_styles.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <!--Site icon-->
+        <link rel="icon" href="imgs/timer.png">
+        
+        <!--JavaScript files-->
+        <script defer src="notification-box/notification_funcs.js"></script>
+        <script defer src="js/index.js"></script>
+
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <img class="logo" src="imgs/logo.png" alt="Logo" draggable="false">
+            </header>
+            <section>
+                <p class="welcome-text">Welcome to Noor Timer</p>
+            </section>
+            <section>
+                <div class="form">
+                    <div class="form-options">
+                        <div class="option">
+                            <img class="option-icon" src="imgs/login.png" alt="Login" draggable="false">
+                            <p class="option-text">Login to your account</p>
+                        </div>
+                        <div class="option">
+                            <img class="option-icon" src="imgs/signup.png" alt="Signup" draggable="false">
+                            <p class="option-text">Signup for a new account</p>
+                        </div>
+                        <div class="option">
+                            <img class="option-icon" src="imgs/forgot-password.png" alt="Forgot password" draggable="false">
+                            <p class="option-text">Forgot password</p>
+                        </div>
+                    </div>
+                    <div class="form-inputs">
+                        <form id="login-form" action="interface" method="POST" hidden>
+                            <input type="text" name="username">
+                            <button type="submit"></button>
+                        </form>
+                        <img class="back-button" src="imgs/back.png" alt="Back" draggable="false">
+                        <p class="input-title">Login to Your Account</p>
+                        <label for="login-username">Username</label>
+                        <input type="text" id="login-username">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password">
+                        <button login-button>Login</button>
+                    </div>
+                    <div class="form-inputs">
+                        <img class="back-button" src="imgs/back.png" alt="Back" draggable="false">
+                        <p class="input-title">Create a New Account</p>
+                        <label for="signup-username">Username</label>
+                        <input type="text" id="signup-username">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password">
+                        <button sigup-button>Signup</button>
+                    </div>
+                    <div class="form-inputs">
+                        <img class="back-button" src="imgs/back.png" alt="Back" draggable="false">
+                        <p class="input-title">Forgot your password?</p>
+                        <label for="recovery-email">Email</label>
+                        <input type="email" id="recovery-email" placeholder="Enter the email you signed up with...">
+                        <button recovery-button>Send</button>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>Powered by Noorul Misbah</p>
+            <p>&copy; 2024 Noorul Misbah. All rights reserved.</p>
+        </footer>
+    </body>
+        
+</html>

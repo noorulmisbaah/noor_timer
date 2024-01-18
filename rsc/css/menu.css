@@ -1,0 +1,332 @@
+/**
+ * Copyright Noorul Misbah 2024-present. All rights reserved.
+ */
+
+ @keyframes animateUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+
+@keyframes animateDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+   }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }   
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+textarea {
+    resize: none;
+    padding: 0.5rem;
+    width: 60%;
+    height: 15rem;
+    font-family: Poppins;
+    border: 1px solid #FFBB00;
+    border-radius: 10px;
+    outline: none;
+    margin: 1rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+    color: #FFBB00;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding: 1rem 5rem;
+    opacity: 0;
+    background: #303030CC;
+    transition: 0.5s linear all;
+}
+
+.menu-x {
+    width: 1.8rem;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    transition: 0.3s linear all;
+    cursor: pointer;
+}
+
+.menu-x:hover {
+    transform: rotate(90deg);     
+}
+
+.menu-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: flex;
+    column-gap: 2rem;
+    border-top: 1px #FFBB00 solid;
+    border-bottom: 1px #FFBB00 solid;
+    height: 80vh;
+}
+
+.menu-items {
+    padding: 1rem;
+    width: 37%;
+    overflow: auto;
+    animation: appear 0.5s linear;
+}
+
+.menu-items::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-item {
+    width: 100%;
+    display: flex;
+    column-gap: 1rem;
+    padding: 0.6rem;
+    transition: 0.5s linear all;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background: #FFBB00;
+    border-radius: 5px;
+}
+
+.menu-item-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.menu-item-title {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+.items-details {
+    padding: 1rem 0;
+    width: 63%;
+    overflow: auto;
+}
+
+.items-details::-webkit-scrollbar {
+    display: none;
+}
+
+.details-content {
+    color: #E0E0E0;
+    font-family: Muli;
+}
+
+.details {
+    display: none;
+    animation-name: animateUp;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+.details input {
+    width: 60%;
+}
+
+.sub-title {
+    margin: 1rem 0;
+    color: #FFBB00;
+    font-size: 1.4rem;
+}
+
+.sub-heading {
+    color: #FF9900;
+    font-size: 1.6rem;
+    font-family: Gruppo;
+    border-bottom: 1px solid #FF9900;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    animation: animateDown 0.5s linear;
+}
+
+.update-account-button {
+    background: #FFBB00;
+    color: #FFFFFF;
+    width: 60%;
+    margin-bottom: 0.5rem;
+}
+
+.update-account-button:hover {
+    background: #FFFFFF;
+    color: #FFBB00;
+}
+
+.delete-account-button {
+    background: #FF0015;
+    color: #FFFFFF;
+    width: 60%;
+}
+
+.delete-account-button:hover {
+    background: #FFFFFF;
+    color: #FF0015;
+}
+
+.comment {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px #FFBB00 solid;
+    border-radius: 10px;
+}
+
+.post-date,
+.post-author {
+    font-size: 1.1rem;
+    font-family: 'Segoe UI Semilight';
+    color: #FFBB00;
+    text-transform: capitalize;
+}
+
+.post-content {
+    margin-top: 1rem;
+    font-size: 1rem
+}
+
+.make-post-button {
+    background: #FFBB00;
+    color: #FFFFFF;
+}
+
+.make-post-button:hover {
+    background: #FFFFFF;
+    color: #FFBB00;
+}
+
+.submit-post-button {
+    background: #33BB00;
+    color: #FFFFFF;
+    width: 4rem;
+}
+
+.submit-post-button:hover {
+    background: #FFFFFF;
+    color: #33BB00;
+}
+
+.comment-area {
+    display: none;
+    flex-direction: column;
+    animation: animateUp 0.5s ease;
+}
+
+.back-button {
+    width: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.app-details,
+.app-details-title {
+    font-family: 'Segoe UI Semilight'; 
+    color: #C0C0C0; 
+    margin-bottom: 1rem;
+}
+
+.app-details-title {
+    color: #FFBB00;
+    margin: 0.6rem 0;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .items-details {
+        width: 50%;
+    }
+
+    .menu-items {
+        width: 50%;
+    }
+
+    .menu {
+        padding: 2rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    button,
+    textarea, 
+    .details input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .back-button {
+        display: block;
+    }
+
+    .items-details {
+        width: 90%;
+    }
+
+    .menu-content {
+        justify-content: center;
+    }
+
+    .items-details {
+        display: none;
+    }
+
+    .menu {
+        padding: 1rem;
+    }
+
+    .menu-x {
+        width: 1.3rem;
+        top: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .menu-items {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .menu-items {
+        width: 100%;
+    }
+}
