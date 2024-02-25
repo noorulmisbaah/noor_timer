@@ -4,7 +4,7 @@
   "description": "A timer application",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
+    "start": "nodemon index",
     "test": "node index"
   },
   "author": "Noorul Misbah",

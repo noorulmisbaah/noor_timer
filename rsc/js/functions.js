@@ -76,9 +76,11 @@ function toReadableTimeString(milliseconds) {
  * @description The itemExists function iterates through an array and checks if the
  * item passed to the function argument exists in the array. The first parameter of the function
  * is the item to search for while the array to search for the item is the second parameter.
+ * Note: The item to search for is converted to lower case during the search as well as the all the items
+ * in the array.
  * @example
- * 
- * var exists = itemExists(4, [3, 5, 2, 5, 4, 10]);
+ * var fruits = ['Orange', 'Peach', 'Quince'];
+ * var exists = itemExists('peach', fruits);
  * console.log(exists); //prints true
  */
 function itemExists(item, array) {

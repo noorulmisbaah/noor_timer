@@ -1,5 +1,4 @@
 const fs = require('fs');
-const mailer = require('nodemailer');
 
 function writeToFile(fileContent) {
     fs.writeFile('./users/users.json', JSON.stringify(fileContent, null, '\t'), (err) => {

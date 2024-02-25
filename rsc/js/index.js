@@ -1,5 +1,6 @@
 /**
  * Copyright Noorul Misbah 2024-present. All rights reserved.
+ * Author: Aminu Adamu Aminu
  */
 
 window.addEventListener('resize', () => {
@@ -7,8 +8,9 @@ window.addEventListener('resize', () => {
         formOptionsContent.style.display = 'flex';
     if (window.innerWidth <= 600 && optionSelected)
         formOptionsContent.style.display = 'none';
-    else
+    else {
         formOptionsContent.style.display = 'flex';
+    }
 });
 
 async function login() {

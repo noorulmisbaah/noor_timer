@@ -27,8 +27,9 @@ function toggleMenu(state) {
     } else if (state === 'close') {
         menu.style.opacity = 0;
         menu.style.zIndex = -1;
-    } else
-        alert(`'${state}' is an unknown option.`);
+    } else {
+        return;
+    }
 }
 
 /**
